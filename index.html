@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, papel, tesoura</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Pedra, Papel, Tesoura</h1>
+        </header>
+        <section class="jogador">
+            <h3>Jogador:</h3>
+        <div class="img__escolha">
+            <img src="/imgs/rock.png" alt="pedra">
+            <img src="/imgs/paper.png" alt="papel">
+            <img src="/imgs/scissor.png" alt="tesoura">
+        </div>
+        <div class="joguete">
+            <form name="joguete" class="options">
+                <label><input type="radio" name="option" id="pedra">Pedra</label>
+                <label><input type="radio" name="option" id="papel">Papel</label>
+                <label><input type="radio" name="option" id="tesoura">Tesoura</label>
+            </form>
+            <form name="joguete" class="botoes">
+                <input type="button" value="Jogar" id="jogar">
+                <input type="reset" value="Reset" id="resetar">
+            </form>
+        </div>
+        </section>  
+        <section class="computador">
+            <h3>Computador:</h3>
+            <img src="/imgs/pc.png" alt="PC" id="pc">
+        </section>
+        <section class="total">
+            <h3>Placar:</h3>
+            <h3 id="placar"></h3>
+        </section>
+</main>
+    <script src="/script.js"></script>
+</body>
+</html>
