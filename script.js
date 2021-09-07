@@ -15,13 +15,13 @@ function joga(){
         let sorte = Math.floor(Math.random() * 3)
         switch(sorte) {
             case 0:
-            pc.src='/imgs/rock.png'
+            pc.src='imgs/rock.png'
             break
             case 1:
-            pc.src='/imgs/paper.png'
+            pc.src='imgs/paper.png'
             break
             case 2:
-            pc.src='/imgs/scissor.png'
+            pc.src='imgs/scissor.png'
             break
         }
         if ((pedra.checked == true && sorte == 0) || (papel.checked == true && sorte == 1) || 
@@ -38,7 +38,7 @@ function joga(){
 }
 
 function reseta(){
-    document.getElementById('pc').src='/imgs/pc.png'
+    document.getElementById('pc').src='imgs/pc.png'
     document.getElementById('placar').innerHTML=''
 }
 
